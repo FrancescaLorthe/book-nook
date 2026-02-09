@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact The Book Nook. Visit us at 123 Main Street in Booktown, call us, or send a message. Find our hours and directions.">
+  <title>Contact Us | The Book Nook</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header-content">
+      <a href="index.html" class="logo">The Book <span>Nook</span></a>
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="books.html">Books</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>We'd love to hear from you</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <p style="margin-bottom: 1.5rem; color: var(--color-text-light);">Have a question, book request, or feedback? Fill out the form below and we'll get back to you within 1-2 business days.</p>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="name">Your Name <span style="color: #c00;">*</span></label>
+                <input type="text" id="name" name="name" required placeholder="Jane Smith">
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span style="color: #c00;">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="jane@example.com">
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number (optional)</label>
+                <input type="tel" id="phone" name="phone" placeholder="(555) 555-5555">
+              </div>
+              <div class="form-group">
+                <label for="subject">What can we help you with? <span style="color: #c00;">*</span></label>
+                <select id="subject" name="subject" required>
+                  <option value="">Please select...</option>
+                  <option value="general">General Question</option>
+                  <option value="order">Book Order / Special Request</option>
+                  <option value="events">Events & Book Clubs</option>
+                  <option value="private-event">Private Event Rental</option>
+                  <option value="partnership">Partnership / Collaboration</option>
+                  <option value="feedback">Feedback or Suggestion</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Your Message <span style="color: #c00;">*</span></label>
+                <textarea id="message" name="message" required placeholder="Tell us how we can help..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <h2>Visit Our Store</h2>
+            <address style="font-style: normal; line-height: 1.8;">
+              <strong>The Book Nook</strong><br>
+              123 Main Street<br>
+              Booktown, BK 12345
+            </address>
+            <p style="margin-top: 1rem;">We're located on the corner of Main Street and Oak Avenue, in the heart of downtown Booktown. Look for the green awning and the window full of books.</p>
+
+            <h3 style="margin-top: 2rem;">Contact Information</h3>
+            <p>
+              <strong>Phone:</strong> <a href="tel:5551234567">(555) 123-4567</a><br>
+              <strong>Email:</strong> <a href="mailto:hello@thebooknook.com">hello@thebooknook.com</a>
+            </p>
+            <p style="margin-top: 0.5rem; color: var(--color-text-light); font-size: 0.9rem;">For book orders and quick questions, calling is often fastest. We're happy to check stock, place special orders, or help you find the perfect gift over the phone.</p>
+
+            <h3 style="margin-top: 2rem;">Store Hours</h3>
+            <table class="hours-table">
+              <tr>
+                <th>Monday</th>
+                <td>9:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <th>Tuesday</th>
+                <td>9:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <th>Wednesday</th>
+                <td>9:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <th>Thursday</th>
+                <td>9:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <th>Friday</th>
+                <td>9:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <th>Saturday</th>
+                <td>9:00 AM – 8:00 PM</td>
+              </tr>
+              <tr>
+                <th>Sunday</th>
+                <td>10:00 AM – 6:00 PM</td>
+              </tr>
+            </table>
+            <p style="margin-top: 1rem; color: var(--color-text-light); font-size: 0.9rem;"><strong>Holiday Hours:</strong> We're closed on Thanksgiving, Christmas Day, and New Year's Day. We may have reduced hours on other holidays—call ahead or check our social media for updates.</p>
+
+            <div class="card" style="margin-top: 2rem; background-color: var(--color-secondary);">
+              <h4>Parking & Transit</h4>
+              <p><strong>Street Parking:</strong> Free 2-hour parking is available on Main Street and Oak Avenue.</p>
+              <p style="margin-top: 0.5rem;"><strong>Parking Lot:</strong> Additional free parking in the municipal lot behind our building. Enter from Oak Avenue and look for the "Public Parking" sign.</p>
+              <p style="margin-top: 0.5rem;"><strong>Public Transit:</strong> We're a 2-minute walk from the Oak Street bus stop, served by Routes 4, 12, and 15.</p>
+              <p style="margin-top: 0.5rem;"><strong>Bike Parking:</strong> Bike racks available directly in front of the store.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="features">
+      <div class="container">
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>Can you order a book for me?</h3>
+            <p>Absolutely. We can special order almost any book currently in print, and most orders arrive within 3-5 business days. There's no extra charge for special orders—you just pay the list price. Stop by, call us at (555) 123-4567, or use the contact form above to place an order.</p>
+          </div>
+          <div class="card">
+            <h3>Do you buy used books?</h3>
+            <p>We accept gently used books for store credit. Bring them in during store hours and our staff will evaluate them on the spot. We're selective—we look for books in good condition that we're confident we can sell—but we're always happy to take a look. Cash payment is not available; store credit only.</p>
+          </div>
+          <div class="card">
+            <h3>Do you offer gift cards?</h3>
+            <p>Yes! Gift cards are available in any amount and can be purchased in-store. They never expire and work for any purchase—books, café items, or event tickets. They make a perfect gift for the reader in your life (or a great hint to drop for yourself).</p>
+          </div>
+          <div class="card">
+            <h3>Can I bring my dog?</h3>
+            <p>Well-behaved, leashed dogs are welcome in the store. We even keep treats behind the counter. However, for the comfort of all customers, we ask that you keep your dog close and be prepared to step outside if they become disruptive. Service animals are always welcome.</p>
+          </div>
+          <div class="card">
+            <h3>Do you host author events?</h3>
+            <p>Yes, we host author readings, signings, and Q&A sessions regularly—typically 2-3 per month. Check our <a href="events.html">Events page</a> for upcoming appearances. If you're an author interested in doing an event at The Book Nook, please contact us using the form above with information about your book and availability.</p>
+          </div>
+          <div class="card">
+            <h3>Can I rent your event space?</h3>
+            <p>Our back-room event space (capacity 50) is available for private rentals on select weekday evenings. We've hosted book launch parties, writing groups, literary-themed birthday parties, and community organization meetings. Contact us to discuss your event and get a quote.</p>
+          </div>
+          <div class="card">
+            <h3>Do you ship books?</h3>
+            <p>We don't currently offer mail-order shipping for individual book purchases. However, for special circumstances—gifts for out-of-town recipients, large orders, or accessibility needs—give us a call and we'll see what we can do. We want to get books into readers' hands.</p>
+          </div>
+          <div class="card">
+            <h3>How do I join a book club?</h3>
+            <p>Just show up! All of our book clubs are open to new members, and there's no registration or commitment required. Check the <a href="events.html">Events page</a> for meeting times and current reads. We offer 15% off the current selection for book club participants.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter CTA -->
+    <section>
+      <div class="container">
+        <div class="card" style="text-align: center; padding: 3rem; max-width: 700px; margin: 0 auto;">
+          <h2>Stay Connected</h2>
+          <p style="margin-bottom: 1.5rem;">Sign up for our weekly newsletter to get event announcements, staff picks, and exclusive offers delivered to your inbox.</p>
+          <form style="display: flex; gap: 1rem; max-width: 450px; margin: 0 auto; flex-wrap: wrap; justify-content: center;">
+            <input type="email" placeholder="Enter your email" required style="flex: 1; min-width: 250px; padding: 0.75rem 1rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+          <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--color-text-light);">We respect your privacy. Unsubscribe anytime.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>The Book Nook</h4>
+          <p>Independent bookselling in Booktown since 2010. Every book on our shelves is chosen with care by readers, for readers.</p>
+        </div>
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="about.html">Our Story</a></li>
+            <li><a href="books.html">Browse Books</a></li>
+            <li><a href="events.html">Events & Book Clubs</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h4>Visit Us</h4>
+          <address>
+            123 Main Street<br>
+            Booktown, BK 12345<br>
+            (555) 123-4567<br>
+            hello@thebooknook.com
+          </address>
+        </div>
+        <div class="footer-section">
+          <h4>Store Hours</h4>
+          <p>
+            Mon–Sat: 9:00 AM – 8:00 PM<br>
+            Sunday: 10:00 AM – 6:00 PM
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 The Book Nook. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.nav-toggle').addEventListener('click', function() {
+      document.querySelector('nav').classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
