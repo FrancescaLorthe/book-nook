@@ -19,6 +19,7 @@
           <li><a href="books.html">Books</a></li>
           <li><a href="events.html">Events</a></li>
           <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html" class="cart-link">Cart (<span id="cart-count">0</span>)</a></li>
         </ul>
       </nav>
     </div>
@@ -232,6 +233,7 @@
     </div>
   </footer>
 
+  <script src="cart.js"></script>
   <script>
     document.querySelector('.nav-toggle').addEventListener('click', function() {
       document.querySelector('nav').classList.toggle('active');

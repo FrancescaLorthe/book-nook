@@ -54,15 +54,24 @@
   --font-body: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
 
   /* Font Sizes - Type Scale (1.25 ratio) */
-  --text-xs: 0.75rem;     /* 12px */
-  --text-sm: 0.875rem;    /* 14px */
-  --text-base: 1rem;      /* 16px */
-  --text-lg: 1.125rem;    /* 18px */
-  --text-xl: 1.25rem;     /* 20px */
-  --text-2xl: 1.5rem;     /* 24px */
-  --text-3xl: 1.875rem;   /* 30px */
-  --text-4xl: 2.25rem;    /* 36px */
-  --text-5xl: 3rem;       /* 48px */
+  --text-xs: 0.75rem;
+  /* 12px */
+  --text-sm: 0.875rem;
+  /* 14px */
+  --text-base: 1rem;
+  /* 16px */
+  --text-lg: 1.125rem;
+  /* 18px */
+  --text-xl: 1.25rem;
+  /* 20px */
+  --text-2xl: 1.5rem;
+  /* 24px */
+  --text-3xl: 1.875rem;
+  /* 30px */
+  --text-4xl: 2.25rem;
+  /* 36px */
+  --text-5xl: 3rem;
+  /* 48px */
 
   /* Font Weights */
   --font-normal: 400;
@@ -109,7 +118,9 @@
 /* ========================================
    Reset & Base Styles
    ======================================== */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -140,7 +151,12 @@ img {
 /* ========================================
    Typography
    ======================================== */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-heading);
   font-weight: var(--font-bold);
   line-height: var(--leading-tight);
@@ -449,11 +465,9 @@ nav a.active {
    Page Header (Interior Pages)
    ======================================== */
 .page-header {
-  background: linear-gradient(
-    135deg,
-    var(--color-brown-700) 0%,
-    var(--color-brown-600) 100%
-  );
+  background: linear-gradient(135deg,
+      var(--color-brown-700) 0%,
+      var(--color-brown-600) 100%);
   color: var(--color-text-inverse);
   padding: var(--space-12) 0;
   text-align: center;
@@ -530,9 +544,17 @@ nav a.active {
   gap: var(--space-8);
 }
 
-.grid-2 { grid-template-columns: repeat(2, 1fr); }
-.grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
 
 /* ========================================
    Cards
@@ -598,7 +620,7 @@ nav a.active {
   top: 0;
   bottom: 0;
   width: 12px;
-  background: linear-gradient(90deg, rgba(0,0,0,0.15), transparent);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.15), transparent);
   z-index: 1;
   pointer-events: none;
 }
@@ -610,7 +632,7 @@ nav a.active {
   right: 0;
   bottom: 0;
   left: 0;
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
   border-radius: var(--border-radius);
   pointer-events: none;
 }
@@ -848,6 +870,20 @@ nav a.active {
   color: var(--color-text-primary);
 }
 
+.save-book {
+  margin-top: 8px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.save-book:hover {
+  background-color: #f5f5f5;
+}
+
 .contact-info address {
   font-style: normal;
   line-height: var(--leading-loose);
@@ -935,7 +971,7 @@ nav a.active {
   pointer-events: none;
 }
 
-.section-with-bg > .container {
+.section-with-bg>.container {
   position: relative;
   z-index: 1;
 }
@@ -1023,8 +1059,13 @@ footer {
     --text-4xl: 2rem;
   }
 
-  .grid-4 { grid-template-columns: repeat(2, 1fr); }
-  .footer-content { grid-template-columns: repeat(2, 1fr); }
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1042,7 +1083,9 @@ footer {
     padding: 0 var(--space-4);
   }
 
-  .nav-toggle { display: block; }
+  .nav-toggle {
+    display: block;
+  }
 
   nav {
     position: absolute;
@@ -1055,7 +1098,9 @@ footer {
     border-top: 1px solid var(--color-border-light);
   }
 
-  nav.active { display: block; }
+  nav.active {
+    display: block;
+  }
 
   nav ul {
     flex-direction: column;
@@ -1092,12 +1137,21 @@ footer {
   }
 
   .grid-2,
-  .grid-3 { grid-template-columns: 1fr; }
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
 
-  .about-content { grid-template-columns: 1fr; }
-  .about-image img { height: 250px; }
+  .about-content {
+    grid-template-columns: 1fr;
+  }
 
-  .contact-grid { grid-template-columns: 1fr; }
+  .about-image img {
+    height: 250px;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 
   .event-card {
     flex-direction: column;
@@ -1117,9 +1171,13 @@ footer {
     --text-3xl: 1.25rem;
   }
 
-  .grid-4 { grid-template-columns: 1fr; }
+  .grid-4 {
+    grid-template-columns: 1fr;
+  }
 
-  .hero { min-height: 300px; }
+  .hero {
+    min-height: 300px;
+  }
 
   .card {
     padding: var(--space-6);
@@ -1139,4 +1197,77 @@ footer {
     width: 100px;
     height: 150px;
   }
+}
+
+/* ========================================
+   Free Shipping Progress Bar
+   ======================================== */
+.shipping-progress-section {
+  background-color: var(--color-bg-secondary);
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.shipping-progress-bar-wrapper {
+  background-color: var(--color-brown-200);
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.shipping-progress-bar-fill {
+  background-color: var(--color-accent);
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.shipping-progress-bar-fill.unlocked {
+  background-color: var(--color-sage-700);
+}
+
+.shipping-progress-message {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+/* ========================================
+   Cart Page
+   ======================================== */
+.cart-items-list {
+  list-style: none;
+  padding: 0;
+  margin: 2rem 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cart-item:first-child {
+  border-top: 1px solid var(--color-border);
+}
+
+.cart-item-title {
+  font-family: var(--font-heading);
+  color: var(--color-text-primary);
+}
+
+.cart-empty {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.cart-empty p {
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.cart-actions {
+  padding: 1.5rem 0;
 }
